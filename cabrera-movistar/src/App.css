@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+#navbar {
+  text-align: center;
+}
+
+#navbar li{
+  display: inline;
+}
+
+.boton-menu {
+  background-color: black;
+  color: white;
+  padding: 4px 4px 4px 4px;
+  margin: 2px 2px 2px 2px;
+  border-radius: 20px;
+  border: 2px solid rgb(182, 181, 181);
+
+}
+
+.cart-widget {
+  height: 35px;
+ 
+}
+
+.card {
+  display: inline;
+  float: left;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.imgProd {
+  width: 100px;
+  height: 120px;
+  margin: auto;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+}

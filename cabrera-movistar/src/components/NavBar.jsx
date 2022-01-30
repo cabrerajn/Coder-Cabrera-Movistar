@@ -1,19 +1,24 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 
 export default function NavBar() {
     return (
         <>
-            <ul>
-                <li><button><img src="https://tienda.movistar.com.ar/media/logo/stores/1/logo-movistar.png" /></button></li>
-                <li><button>Alcatel</button></li>
-                <li><button>Huawei</button></li>
-                <li><button>LG</button></li>
-                <li><button>Motorola</button></li>
-                <li><button>Nokia</button></li>
-                <li><button>Samsung</button></li>
-                <li><button>Sony</button></li>
-                <li><button>TCL</button></li>
-            </ul>
+            <div id="navbar">
+                <ul>
+                    <li><button className="boton-menu"><img src="https://tienda.movistar.com.ar/media/logo/stores/1/logo-movistar.png" /></button></li>
+                    <li><button className="boton-menu">Alcatel</button></li>
+                    <li><button className="boton-menu">Huawei</button></li>
+                    <li><button className="boton-menu">LG</button></li>
+                    <li><button className="boton-menu">Motorola</button></li>
+                    <li><button className="boton-menu">Nokia</button></li>
+                    <li><button className="boton-menu">Samsung</button></li>
+                    <li><button className="boton-menu">Sony</button></li>
+                    <li><button className="boton-menu">TCL</button></li>
+                    <CartWidget />
+                </ul>
+            </div>
+            
         
         </>
     )
