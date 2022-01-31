@@ -1,13 +1,13 @@
 import React from "react";
-import ItemCount from "./ItemCount";
+import ItemList from "./ItemList";
 
 
 
 export default function ItemListContainer() {
     return (
         <>
-            <p>listado de productos</p>
-            <ItemCount />
+            <ItemList />
+            
         </>
     )
 }
