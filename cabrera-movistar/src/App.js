@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import NavBar from './components/NavBar';
+import Cart from './components/Cart';
 
 
 export default function App() {
@@ -23,6 +24,10 @@ export default function App() {
 
           <Route path="/item/:itemId">
             <ItemDetailContainer />
+          </Route>
+
+          <Route exact path="/cart">
+            <Cart />
           </Route>
 
         </Switch>

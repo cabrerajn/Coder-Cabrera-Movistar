@@ -39,6 +39,7 @@
 
 #navbar {
   text-align: center;
+  background-color: white;
 }
 
 #navbar li{
@@ -46,17 +47,17 @@
 }
 
 .boton-menu {
-  background-color: black;
-  color: white;
   padding: 4px 4px 4px 4px;
+  background-color: white;
   margin: 2px 2px 2px 2px;
-  border-radius: 20px;
-  border: 2px solid rgb(182, 181, 181);
+  border: none;
 
 }
 
 .cart-widget {
   height: 35px;
+  border: none;
+  background-color: white;
  
 }
 

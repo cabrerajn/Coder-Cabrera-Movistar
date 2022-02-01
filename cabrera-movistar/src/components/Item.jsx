@@ -12,7 +12,7 @@ export default function Item({ item }) {
                 <p>{item.description}</p>
                 <p>${item.price}</p>
                 <p>Stock Disponible: {item.stock}</p>
-                    <button> <Link to={"/item/" + item.id}>Ver detalles de producto</Link></button>
+                <button> <Link to={"/item/" + item.id}>Ver detalles de producto</Link></button>
                 
             </div> 
             </div>

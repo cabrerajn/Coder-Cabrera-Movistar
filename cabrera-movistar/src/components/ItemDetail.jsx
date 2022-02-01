@@ -24,7 +24,7 @@ export default function ItemDetail({ producto }) {
                             <p>Cantidad<MasMenos tope={producto.stock} /></p>
                         </div>    
                         <div className="itemDetail">
-                            <button>Comprar</button>
+                            <button><Link to={"/cart"}>Comprar</Link></button>
                         </div>
                     </>
                     :
