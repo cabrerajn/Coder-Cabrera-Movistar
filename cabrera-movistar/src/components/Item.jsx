@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Item({ item }) {
 
@@ -11,7 +12,7 @@ export default function Item({ item }) {
                 <p>{item.description}</p>
                 <p>${item.price}</p>
                 <p>Stock Disponible: {item.stock}</p>
-                <button> Ver detalles de producto</button>
+                    <button> <Link to={"/item/" + item.id}>Ver detalles de producto</Link></button>
                 
             </div> 
             </div>
