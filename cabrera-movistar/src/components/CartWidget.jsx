@@ -1,11 +1,13 @@
 import React from "react";
-import CartIcon from '../img/CartIcon.jpg'
+import { Link } from "react-router-dom";
+import CartIcon from '../img/CartIcon.png'
+
 
 
 export default function CartWidget() {
     return (
         <>
-           <li><button><img className="cart-widget" src={CartIcon} /></button></li>
+           <li><Link to={"/cart"}><img className="cart-widget" src={CartIcon} /></Link></li>
         </>
     )
 }

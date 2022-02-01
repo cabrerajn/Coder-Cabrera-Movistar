@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import NavBar from './components/NavBar';
 import CategoryContainer from './components/CategoryContainer';
+import Cart from './components/Cart';
 
 
 export default function App() {
@@ -28,6 +29,10 @@ export default function App() {
 
           <Route path="/category/:categoriaId">
             <CategoryContainer />
+          </Route>
+
+          <Route exact path="/cart">
+            <Cart />
           </Route>
 
 

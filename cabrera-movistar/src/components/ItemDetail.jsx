@@ -16,15 +16,9 @@ export default function ItemDetail({ producto }) {
                             <p>{producto.description}</p>
                             <p>${producto.price}</p>
                             <p>Stock Disponible: {producto.stock}</p>
-                        </div>
-                        <div className="itemDetail">
                             <button><Link to={"/"}>Volver</Link></button>
-                         </div>
-                        <div className="itemDetail">
                             <p>Cantidad<MasMenos tope={producto.stock} /></p>
-                        </div>    
-                        <div className="itemDetail">
-                            <button>Comprar</button>
+                            <button><Link to={"/cart"}>Comprar</Link></button>
                         </div>
                     </>
                     :
