@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
+
 export default function NavBar() {
+
     return (
         <>
             <div id="navbar">
@@ -14,8 +16,7 @@ export default function NavBar() {
                     <CartWidget />
                 </ul>
             </div>
-            
-        
         </>
     )
+    
 }

@@ -1,20 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Item({ item }) {
 
+export default function Item({ product }) {
+    
     return (
         <>
-            <div>
             <div className="card">
-                <h2>{item.title}</h2>
-                <img src={item.pictureUrl} className="imgProd" />
-                <p>{item.description}</p>
-                <p>${item.price}</p>
-                <button> <Link to={"/item/" + item.id}>Ver detalles de producto</Link></button>
-                
+                <h2>{product.title}</h2>
+                <img src={product.pictureUrl} className="imgProd" />
+                <p>${product.price}</p>
+                <button> <Link to={"/item/" + product.id}>Ver detalles de producto</Link></button>
             </div> 
-            </div>
         </>
     );
+    
 }

@@ -1,23 +1,24 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-export default function MasMenos({tope}){
 
-    const [cantidad, setCantidad]  = useState(0);
+export default function MasMenos({stock, initial, onAdd}){
 
-    function sumar(){
-        
-        if(cantidad < tope ) setCantidad(cantidad + 1)
+    const [cantidad, setCantidad]  = useState(initial);
+
+    function sumar() {
+        if(cantidad < stock ) setCantidad(cantidad + 1)
     }
 
     function restar() {
-        if (cantidad > 0) setCantidad(cantidad-1)
+        if (cantidad > initial) setCantidad(cantidad-1)
     }
 
     return(
         <>
             <button onClick={()=>restar()}>-</button>
             {cantidad}
-            <button onClick={()=>sumar()}>+</button>
+            <button onClick={() => sumar()}>+</button>
+            <button onClick={()=>onAdd(cantidad)}>Agregar al carrito</button>
         </>
     )
 

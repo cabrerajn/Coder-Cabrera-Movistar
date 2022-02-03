@@ -7,7 +7,7 @@ import CartIcon from '../img/CartIcon.png'
 export default function CartWidget() {
     return (
         <>
-           <li><Link to={"/cart"}><img className="cart-widget" src={CartIcon} /></Link></li>
+           <li><Link to={"/cart"}><img className="cart-widget" src={CartIcon} />0</Link></li>
         </>
     )
 }
